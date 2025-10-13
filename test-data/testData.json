@@ -1,0 +1,17 @@
+[
+  {
+    "Country": "sa-ar",
+    "price": "15",
+    "currency" : "ريال سعودي"
+  },
+  {
+    "Country":"kw-ar",
+    "price": "2.5",
+    "currency" : "دينار كويتي"
+  },
+  {
+    "Country":"bh-ar",
+    "price": "3",
+    "currency" : "دينار بحريني"
+  }
+]

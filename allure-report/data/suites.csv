@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4454","Scenario: Verify subscription Packages for bh-ar","chromium","Mon Oct 13 07:53:42 EEST 2025","passed","Mon Oct 13 07:53:47 EEST 2025","","task.spec.ts","",""
+"","4747","Scenario: Verify subscription Packages for kw-ar","chromium","Mon Oct 13 07:53:42 EEST 2025","passed","Mon Oct 13 07:53:47 EEST 2025","","task.spec.ts","",""
+"","3190","Scenario: Verify subscription Packages for sa-ar","chromium","Mon Oct 13 07:53:42 EEST 2025","passed","Mon Oct 13 07:53:46 EEST 2025","","task.spec.ts","",""
