@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="attachments">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/allure-report/data/attachments/ada9a9d2bc75690b.zip!/" />
+      <root url="jar://$PROJECT_DIR$/allure-report/data/attachments/775fa4fd3f7df322.zip!/" />
+      <root url="jar://$PROJECT_DIR$/allure-report/data/attachments/ab82a25b52dfa982.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

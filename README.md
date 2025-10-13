@@ -1,41 +1,39 @@
-# Task 2 Weather App
+# Task 3 Subscription Packages
 
-**It verifies setup flow then going into setting and Changing some   
-    settings and then returning home page Validating Settings  
-    is applied and Correct Data is Displayed**  
+**Validate the Subscription Packages – Type & Price and Currency 
+for all Countries (SA / Kuwait and Bahrain)**  
 
-- **Used Page Object Model for Scalability and Readability**
-- **Used Fluent POM and Descriptive Steps to make normal user understand it**
-- **Pop up Messages Challenged me as it does appear semiRandom**
-- **But I did Capture it's Locator and Handle it Using Wait**
-- **Used DriverFactory to Ensure only Single Insatnce of it**
+* **Page Object Model (POM):** Used for enhanced scalability and readability of the test code.
+* **Data-Driven Testing:** Test data is stored in separate **JSON files** to prevent test repetition and improve maintainability.
+* **Behavior-Driven Development (BDD) Style:** Test steps are structured using Playwright's TestSteps to produce clear, business-readable reports.
 
-## Prerequisite
-1. Having emulator / Real Device for Testing 
-2. Installing Weather APP on Device / Emulator  https://play.google.com/store/apps/details?id=com.info.weather.forecast
-3. Appium is installed and running locally on ipAddress=127.0.0.1 || port=4723
-
-### Setup
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/Khaled-MohyEldin/AppStore-Test-Automation.git
-   
-2. Install dependencies:
+### Steps   
+1. **Install dependencies**:
     ```bash
-   mvn clean install
-
-5. Run test:
+   npm install
+2. **Run test**:  
    ```bash
-   mvn test
-   
-7. See Reults in Allure Reports
-   ```bash
-   allure serve allure-results
+   npx playwright test
+3.  **View Reports:**
 
-## Tech Stack
-- **Java 21**
-- **Appium 3.x**
-- **TestNG**
-- **Maven**
-- **Android Emulator / Real Device**
+    * **Playwright Report:**
+
+        ```bash
+        npx playwright show-report
+        ```
+
+    * **Allure Report:**
+
+        ```bash
+        allure serve allure-results
+        ```
+## Results 
+   Screenshots of the generated reports:
+
+* **Allure Report** 
+   ![alt text](Allure-Report.png)    
+ * **PlayWright Report (Part 1)** 
+   ![alt text](PR-Report-1.png) 
+* **PlayWright Report (Part 2)**
+   ![alt text](PR-Report-2.png)
+
