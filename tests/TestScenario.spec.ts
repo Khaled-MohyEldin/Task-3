@@ -12,12 +12,7 @@ for all Countries (SA / Kuwait and Bahrain)
     Also all test data is outside in json files 
     Used Page Object Model for future readability and scaling 
     ============================
-    #Commands 
-    npx playwright test
-
-    npx playwright show-report
-
-    allure serve allure-results
+    I've set the testIdAttribute in the playwright.config.ts file to 'data-test-id'
 */
 
 
@@ -60,8 +55,6 @@ for (const dataSet of testData) {
             expect(plusPrice).toBe(dataSet.price);
             expect(plusCurrency).toContain(dataSet.currency);
         });
-
-        // console.log("First Package = ", freeTitle, " 2nd Package = ", plusTitle);
 
     });
 
