@@ -1,12 +1,10 @@
 {
   "name": "pr-1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Playwright BDD Tests",
   "main": "index.js",
   "scripts": {
-    "web": "npx playwright test example --grep @web ",
-    "api": "npx playwright test --grep @api",
-    "safari": "npx playwright test --project=webkit "
+    "test:bdd": "npx cucumber-js --require-module ts-node/register --require 'features/steps/**/*.ts' features"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +13,10 @@
   "devDependencies": {
     "@playwright/test": "^1.55.1",
     "@types/node": "^24.5.0",
-    "allure-playwright": "^3.4.1"
+    "allure-playwright": "^3.4.1",
+    "playwright-bdd": "^8.4.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.5.6"
   },
   "dependencies": {
     "@axe-core/playwright": "^4.10.2",

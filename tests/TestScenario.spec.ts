@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { PackagesPage } from '../POM/PackagesPage.ts'
+import { PackagesPage } from '../POM/PackagesPage'
 import basicData from '../test-data/basicData.json';
 import testData from '../test-data/testData.json';
 
@@ -43,6 +43,10 @@ for (const dataSet of testData) {
             expect(plusCurrency).toBeTruthy();
             //to check it's numeric
             expect(plusPrice).toMatch(/\d+/);
+            
+            // const countryLogo = page.getByAltText(dataSet.Country.slice(0, 2));
+            // await expect(countryLogo).toBeVisible();
+            console.log("Normal files Here ***********")
         })
 
         await test.step('Then the page should show correct titles and plus-tier pricing/currency', async () => {

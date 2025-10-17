@@ -1,12 +1,18 @@
 import { defineConfig, devices } from '@playwright/test';
+import { defineBddConfig } from 'playwright-bdd';
 
+const testDir = defineBddConfig({
+  features: 'tests/feature/***.feature',
+  steps: 'tests/steps/***.ts'
+});
 
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
   timeout: 15 * 1000, 
-  testDir: './tests',
+  // testDir: './tests',
+  testDir,
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */

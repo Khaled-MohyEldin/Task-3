@@ -14,6 +14,8 @@ for all Countries (SA / Kuwait and Bahrain)**
 2. **Run test**:  
    ```bash
    npx playwright test
+   //for BDD files
+   npx playwright test -c playwright.bdd.config.ts
 3.  **View Reports:**
 
     * **Playwright Report:**
